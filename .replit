@@ -1,2 +1,2 @@
-run = "python apiece/app.py"
+run = "python source/apiece/app.py"
 language = "nix"
