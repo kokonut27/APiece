@@ -1,2 +1,0 @@
-run = "python source/apiece/app.py"
-language = "nix"
