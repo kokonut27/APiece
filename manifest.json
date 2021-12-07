@@ -1,0 +1,32 @@
+{
+    "author": "JBYT27",
+    "name": "APiece",
+    "version": "0.0.1",
+    "description": "The extension that connects all the social media apps together.",
+    "icons": {
+        "16": "icons/logo_16.jpeg",
+        "48": "icons/logo_48.jpeg",
+        "128": "icons/logo_128.jpeg"
+    },
+    "action": {
+        "default_title": "Configure APiece",
+        "default_popup": "popup/main.html"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/config.js",
+                "scripts/acc-int.js",
+                "scripts/content-script.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "manifest_version": 3
+}
