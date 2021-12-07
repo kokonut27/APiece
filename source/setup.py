@@ -1,10 +1,14 @@
-from setuptools import setup
+"""from setuptools import setup
 
 with open("README.md", "r") as fh:
   long_description = fh.read()
 
 setup(
   name = "apiece",
+  install_requires=[
+    'flask'
+        # other requirements
+  ],
   version = "0.0.1",
   description = "The app that connects all the social media apps together.",
   long_description = long_description,
@@ -22,4 +26,14 @@ setup(
 ],
   zip_safe=True,
   python_requires = ">=3.6",
-)
+)"""
+
+from setuptools import setup, find_packages
+
+setup(name='apiece',
+      version='0.0.1',
+      # Modules to import from other scripts:
+      packages=find_packages(),
+      # Executables
+      scripts=["app.py"],
+     )
