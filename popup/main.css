@@ -3,19 +3,6 @@ body {
   color: #333;
 }
 
-nav {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: max-content;
-
-  margin: 8px;
-  padding: 10px;
-
-  border-radius: 8px;
-
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .link {
     margin-right: 8px;
 
