@@ -16,7 +16,6 @@
         {
             "js": [
                 "scripts/config.js",
-                "scripts/acc-int.js",
                 "scripts/content-script.js"
             ],
             "matches": [

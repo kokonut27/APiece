@@ -2,4 +2,3 @@
 
 <h1 align="center"> APiece </h1> 
 <h5 align="center"> The extension that connects all the social media apps together </h5>
-

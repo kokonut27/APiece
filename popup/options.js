@@ -1,5 +1,5 @@
 const placeholderr = document.querySelector(".apiece-input").placeholder;
-// const redirects = document.querySelector(".redirects");
+const redirects = document.querySelector(".redirects");
 const clearBtn = document.querySelector(".clear");
 const clearrBtn = document.querySelector(".clear-social");
 const inputr = document.querySelector(".redirect-input");
@@ -16,7 +16,7 @@ clearBtn.addEventListener("click", () => {
 clearrBtn.addEventListener("click", () => {
     if (!confirm("This will reset your social media. Are you sure?")) return;
     chrome.storage.sync.set({
-        redirects: defaultOptions.redirects
+        redirects: defaultOptions.social
     });
     updateSettings();
 });
@@ -42,7 +42,7 @@ addBtnr.addEventListener("click", () => {
 function updateSettings() {
     chrome.storage.sync.get(keys, options => {
         redirects.textContent = "";
-        for (const site of options.redirects) {
+        for (const site of options.social) {
             const el = document.createElement("input");
             el.classList.add("input", "apiecei");
             el.value = site;
